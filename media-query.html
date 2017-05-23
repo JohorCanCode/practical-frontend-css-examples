@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Media Query</title>
+
+    <style>
+      /* Phones - less than 768px) */
+      .visible-lg,
+      .visible-md {
+        display: none !important;
+      }
+
+      .row:after {
+        clear: both;
+      }
+      .col {
+        float: left;
+        width: 100%;
+        border: 1px solid black;
+      }
+
+      /* Tablets - 768px and up */
+      @media (min-width: 768px) {
+        .col {
+          width: 49%;
+        }
+      }
+      /* Laptops - 992px and up */
+      @media (min-width: 992px) {
+        .col {
+          width: 30%;
+        }
+        .visible-md {
+          display: block !important;
+        }
+      }
+      /* Large desktops - 1200px and up */
+      @media (min-width: 1200px) {
+        .col {
+          width: 24%;
+        }
+        .visible-lg {
+          display: block !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query</h1>
+
+    <div class="row">
+      <div class="col">
+        Left Bar
+      </div>
+      <div class="col">
+        Main
+      </div>
+      <div class="col visible-md">
+        Right Bar
+      </div>
+      <div class="col visible-lg">
+        Optional Bar
+      </div>
+    </div>
+  </body>
+</html>

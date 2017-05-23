@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Box Model</title>
+    <style>
+    .box {
+      margin: 50px;
+      border: 10px solid black;
+      padding: 30px;
+      width: 200px;
+      height: 100px;
+
+      background-color: yellow;
+
+      outline: 25px solid orange;
+    }
+    .box-inline-block {
+      display: inline-block;
+    }
+    .box-inline {
+      display: inline;
+      padding: 10px;
+      margin: 10px;
+      outline: 5px solid orange;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <div class="box">
+      This is a box
+    </div>
+
+
+    <h1>Box Types</h1>
+
+    <h2>display: block</h2>
+    Some text
+    <div class="box">
+      This is a box
+    </div>
+    <div class="box">
+      This is a box
+    </div>
+    <div class="box">
+      This is a box
+    </div>
+
+    <h2>display: inline-block</h2>
+    Some text
+    <div class="box box-inline-block">
+      This is a box
+    </div>
+    <div class="box box-inline-block">
+      This is a box
+    </div>
+    <div class="box box-inline-block">
+      This is a box
+    </div>
+
+    <h2>display: inline</h2>
+    Some text
+    <div class="box box-inline">
+      This is a box
+    </div>
+    <div class="box box-inline">
+      This is a box
+    </div>
+    <div class="box box-inline">
+      This is a box
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Layout - Floats</title>
+
+    <style>
+      .line {
+        border: 1px solid black;
+      }
+
+      .row:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .col {
+        float: left;
+        width: 30%;
+        margin: 0.5rem;
+      }
+      .pull-right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Float: Left</h1>
+    <div style="float:right" class="line">
+      This is a box
+    </div>
+    <div style="clear: both"></div>
+
+    <h1>Float: Right</h1>
+    <div style="float:left" class="line">
+      This is a box
+    </div>
+    <div style="clear: both"></div>
+
+    <h1>Simple Grid System</h1>
+    <div class="row">
+      <div class="pull-right line">
+        This is a box.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col line">
+        This is a box.
+      </div>
+      <div class="col line">
+        This is a box.
+      </div>
+      <div class="col line">
+        This is a box.
+        <br />
+        This is a box.
+      </div>
+      <div class="col line">
+        This is a box.
+      </div>
+      <div class="col line">
+        This is a box.
+      </div>
+      <div class="col line">
+        This is a box.
+      </div>
+    </div>
+    <footer>
+      This is footer.
+    </footer>
+  </body>
+</html>

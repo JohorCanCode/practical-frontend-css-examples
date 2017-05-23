@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Layout - Centering</title>
+
+    <style>
+      .box-line {
+        border: 1px solid black;
+      }
+
+      .box {
+        width: 50%;
+        margin: auto;
+      }
+
+      .vbox-container {
+        display: table;
+        width: 100%;
+        min-height: 10em;
+      }
+      .vbox {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .flex-container {
+        display: flex;
+        width: 100%;
+        min-height: 10em;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Centering</h1>
+    <div class="box box-line">
+      This is a box.
+    </div>
+
+    <br />
+    <br />
+
+    <h1>Vertical Centering - Table</h1>
+    <div class="vbox-container box-line">
+      <div class="vbox">
+        <div class="box box-line">
+            This is a box.
+        </div>
+      </div>
+    </div>
+
+    <h1>Vertical Centering - Flexbox</h1>
+    <div class="flex-container box-line">
+      <div class="box box-line">
+        This is a box.
+      </div>
+    </div>
+  </body>
+</html>
